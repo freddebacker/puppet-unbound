@@ -180,7 +180,10 @@ class unbound::config {
       true    => 'validator',
       default => undef,
     },
-    'iterator',
+    $::unbound::enable_iterator ? {
+      true    => 'iterator',
+      default => undef,
+    }
   ])
 
   case $::osfamily {
