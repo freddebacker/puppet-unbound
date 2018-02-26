@@ -198,6 +198,7 @@ class unbound (
   Boolean                                                                         $enable_dnssec                = true,
   Boolean                                                                         $enable_ecs                   = false,
   Boolean                                                                         $enable_ipsec                 = false,
+  Boolean                                                                         $enable_iterator              = true,
   String                                                                          $group                        = $::unbound::params::group,
   Boolean                                                                         $manage_control               = true,
   Boolean                                                                         $manage_package               = $::unbound::params::manage_package,
