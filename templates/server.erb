@@ -300,7 +300,9 @@ server:
 <% unless @disable_dnssec_lame_check.nil? -%>
 	ďisable-dnssec-lame-check: <%= @disable_dnssec_lame_check ? 'yes' : 'no' %>
 <% end -%>
+<% unless @module_config.empty? -%>
 	module-config: "<%= @module_config.join(' ') %>"
+<% end -%>
 <% if @trust_anchor_file -%>
 	trust-anchor-file: "<%= @trust_anchor_file %>"
 <% end -%>
