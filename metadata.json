@@ -1,6 +1,6 @@
 {
   "name": "bodgit-unbound",
-  "version": "2.0.0",
+  "version": "2.0.0-velocix",
   "author": "bodgit",
   "summary": "Puppet Module for managing Unbound",
   "license": "Apache-2.0",
@@ -65,7 +65,7 @@
     },
     {
       "name": "thrnio/ip",
-      "version_requirement": ">=1.0.0 <2.0.0"
+      "version_requirement": "1.0.1-velocix"
     },
     {
       "name": "bodgit/bodgitlib",
